@@ -2,7 +2,7 @@ Recipe mainly borrowed from https://github.com/3liz/py-qgis-server/blob/master/d
 
 ```bash
 docker run -p 8080:8080 \
-       -v $pwd:/projects \
+       -v $(pwd):/projects \
        -e QGSRV_SERVER_WORKERS=2 \
        -e QGSRV_LOGGING_LEVEL=DEBUG  \
        -e QGSRV_CACHE_ROOTDIR=/projects \
